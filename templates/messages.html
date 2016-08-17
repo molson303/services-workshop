@@ -1,3 +1,7 @@
 <h1>All Messages</h1>
 <span><a href="#/new">New Message</a></span>
 <h2>{{vw.success}}</h2>
+
+<div class="well" ng-repeat='message in vw.allMessages'>
+  <h2>{{message.id}}. {{message.text}}</h2>
+</div>
